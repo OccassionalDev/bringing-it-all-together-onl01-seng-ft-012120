@@ -48,6 +48,6 @@ class Dog
       self.update
     end 
     
-    
+    sql = "INSERT INTO dogs ()"
   end 
 end 
