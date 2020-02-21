@@ -82,7 +82,7 @@ class Dog
       dog = Dog.new(id: dog_info[0], name: dog_info[1], breed: dog_info[2])
     
     else 
-      
+      dog.self.create
       
     end 
        
