@@ -73,7 +73,9 @@ class Dog
     DB[:conn].execute(sql, id).collect {|row| self.new_from_db(row)}.first
   end
   
-  def self.find_or_create_by
+  def self.find_or_create_by(name:, breed:)
+    sql = "SELECT * FROM dogs WHERE name = ? AND breed = ?"
+    
     
   end 
 end 
