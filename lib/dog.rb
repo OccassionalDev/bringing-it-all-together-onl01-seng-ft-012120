@@ -71,5 +71,9 @@ class Dog
     sql = "SELECT * FROM dogs WHERE id = ? LIMIT 1"
     
     DB[:conn].execute(sql, id).collect {|row| self.new_from_db(row)}.first
+  end
+  
+  def self.find_or_create_by
+    
   end 
 end 
